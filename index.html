@@ -4,21 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
     <title>Vowel Remover by JuniorTeamMS</title>
 </head>
 <body>
-    <div>
-        <h1>Vowel Remover</h1>
-        <p>This project allows you, to remove the vowels on the word that you specify below</p>
-    </div>
-    <form>
-        <label for="txt">Type the text here!</label>
-        <textarea id="txt" rows="4" cols="50"></textarea>
-        <button type="button" onclick="removeVowel()">Remove!</button>
-        <label for="result">Texto sin vocales:</label><br>
-        <textarea id="result" rows="4" cols="50" readonly></textarea>
-    </form>
+
+    <main class="main">
+        <section class="intro-section">
+            <h1>Vowel Remover</h1>
+            <p>This project allows you, to remove the vowels on the word that you specify below 👾</p>
+        </section>
+        <form>
+            <div class="input-form">
+                <label for="txt">Type the text here!</label>
+                <input type="text" name="txt" id="txt" class="input-text" maxlength="12">
+            </div>
+            <div class="input-form">
+                <button type="button" onclick="removeVowel()">
+                    <p>Remove it!</p>
+                    <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+                    </svg>
+                </button>
+                <!-- <button type="button" onclick="removeVowel()">Remove!</button> -->
+            </div>
+            <div class="input-form">
+                <input type="text" name="result" id="result" class="result-text" disabled>
+            </div>
+            
+        </form>
+    </main>
+
+    
+    
     <script src="main.js"></script>    
 </body>
 </html>
